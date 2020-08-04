@@ -15,8 +15,12 @@
         .hero-section {
             grid-area: hero;
             height: 50vh;
-            background-color: lightblue;
         }
+            .hero-section img {
+                max-width: 1200px;
+                max-height: 50vh;
+                margin-left: 12px;
+            }
         .productGallery-section {
             grid-area: productGallery;
             padding: 5vh 0px;
