@@ -19,15 +19,14 @@
         }
         .productGallery-section {
             grid-area: productGallery;
-            height: 30vh;
-            background-color: lightgreen;
+            padding: 5vh 0px;
             display: grid;
             grid-gap: 1em;
-            grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             overflow: hidden;
         }
             .productGallery-section img {
-                height: 100%;
+                width: 100%;
             }
 
 }
