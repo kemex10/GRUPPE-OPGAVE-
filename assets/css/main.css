@@ -5,5 +5,21 @@
     font-family: sans-serif;
 }
 @media screen and (min-width: 1200px) {
-    
+    .main-container {
+        display: grid;
+        grid-template: auto auto / auto 1200px auto;
+        grid-template-areas: 
+        '. hero .'
+        '. productGallery .';
+    }
+        .hero-section {
+            grid-area: hero;
+            height: 50vh;
+            background-color: lightblue;
+        }
+        .productGallery-section {
+            grid-area: productGallery;
+            height: 50vh;
+            background-color: lightgreen;
+        }
 }
