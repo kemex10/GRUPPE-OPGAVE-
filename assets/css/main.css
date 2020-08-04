@@ -5,5 +5,29 @@
     font-family: sans-serif;
 }
 @media screen and (min-width: 1200px) {
-    
+    .main-container {
+        display: grid;
+        grid-template: auto auto / auto 1200px auto;
+        grid-template-areas: 
+        '. hero .'
+        '. productGallery .';
+    }
+        .hero-section {
+            grid-area: hero;
+            height: 50vh;
+            background-color: lightblue;
+        }
+        .productGallery-section {
+            grid-area: productGallery;
+            height: 30vh;
+            background-color: lightgreen;
+            display: grid;
+            grid-gap: 1em;
+            grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
+            overflow: hidden;
+        }
+            .productGallery-section img {
+                height: 100%;
+            }
+
 }
