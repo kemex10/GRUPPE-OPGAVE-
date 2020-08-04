@@ -19,7 +19,8 @@
             .hero-section img {
                 max-width: 1200px;
                 max-height: 50vh;
-                margin-left: 12px;
+                margin-left: 0px;
+                margin-right: 0px;
             }
         .productGallery-section {
             grid-area: productGallery;
