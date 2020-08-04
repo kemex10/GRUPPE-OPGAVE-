@@ -24,5 +24,10 @@
             display: grid;
             grid-gap: 1em;
             grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
+            overflow: hidden;
         }
+            .productGallery-section img {
+                height: 100%;
+            }
+
 }
