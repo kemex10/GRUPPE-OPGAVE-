@@ -14,11 +14,15 @@
     }
         .hero-section {
             grid-area: hero;
-            height: 50vh;
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
             .hero-section img {
                 max-width: 1200px;
-                max-height: 50vh;
+
                 margin-left: 0px;
                 margin-right: 0px;
             }
