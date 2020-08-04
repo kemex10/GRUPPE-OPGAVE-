@@ -3,6 +3,7 @@ body {margin:0;font-family:Arial}
 .topnav {
   overflow: hidden;
   background-color: rgb(41, 90, 1);
+  height: 100px;
 }
 
 .topnav a {
