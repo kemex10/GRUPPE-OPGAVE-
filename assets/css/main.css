@@ -19,7 +19,7 @@
         }
         .productGallery-section {
             grid-area: productGallery;
-            height: 50vh;
+            height: 30vh;
             background-color: lightgreen;
             display: grid;
             grid-gap: 1em;
