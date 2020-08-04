@@ -20,7 +20,6 @@
         .productGallery-section {
             grid-area: productGallery;
             padding: 5vh 0px;
-            background-color: lightgreen;
             display: grid;
             grid-gap: 1em;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
