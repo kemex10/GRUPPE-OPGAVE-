@@ -21,5 +21,8 @@
             grid-area: productGallery;
             height: 50vh;
             background-color: lightgreen;
+            display: grid;
+            grid-gap: 1em;
+            grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
         }
 }
