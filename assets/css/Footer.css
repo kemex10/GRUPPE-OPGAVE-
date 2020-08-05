@@ -200,7 +200,7 @@ form input{
         flex-direction: column;
     }
     .page-footer {
-        height: 205vh;
+        height: 267vh;
         width: 100%;
         background-color: #40A242;
     }
@@ -276,6 +276,7 @@ form input{
     .mobile--wrapper {
         flex-direction: column;
     }
+    
     .icons--container {
         display: block;
     }
