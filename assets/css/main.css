@@ -4,6 +4,54 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+@media screen and (min-width: 0px) {
+    .main-container {
+        display: grid;
+        grid-template: auto auto / 100%;
+        grid-template-areas: 
+        'hero'
+        'productGallery';
+    }
+        .hero-section {
+            grid-area: hero;
+            height: auto;
+            overflow: hidden;
+        }
+            .hero-section figure {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .hero-section figure img {
+                    width: 150%;
+                    z-index: -1;
+                }
+                .hero-section figure figcaption {
+                    position: absolute;
+                    z-index: 1;
+                    color: white;
+                    font-size: 1.5em;
+                    text-align: center;
+                    text-shadow: 2px 2px 15px black;
+                }
+        .productGallery-section {
+            grid-area: productGallery;
+            padding: 5vh 0px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1em;
+        }
+            .productGallery-section img {
+                width: 100%;
+            }
+        .page-footer {
+            height: 50vh;
+            width: 100%;
+            background-color: #298f2b;        
+        }
+}
+
 @media screen and (min-width: 1200px) {
     .main-container {
         display: grid;
@@ -16,16 +64,25 @@
             grid-area: hero;
             height: 60vh;
             overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
-            .hero-section img {
-                max-width: 1200px;
-
-                margin-left: 0px;
-                margin-right: 0px;
+            .hero-section figure {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
+                .hero-section figure img {
+                    width: 100%;
+                    z-index: -1;
+                }
+                .hero-section figure figcaption {
+                    position: absolute;
+                    z-index: 1;
+                    color: white;
+                    font-size: 2em;
+                    text-align: center;
+                    text-shadow: 2px 2px 15px black;
+                }
         .productGallery-section {
             grid-area: productGallery;
             padding: 5vh 0px;
@@ -37,5 +94,13 @@
             .productGallery-section img {
                 width: 100%;
             }
-
+                .productGallery-section img:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+        .page-footer {
+            height: 50vh;
+            width: 100%;
+            background-color: #40A242;
+        }
 }
