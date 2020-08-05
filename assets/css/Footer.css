@@ -199,6 +199,11 @@ form input{
         display: flex;
         flex-direction: column;
     }
+    .page-footer {
+        height: 205vh;
+        width: 100%;
+        background-color: #40A242;
+    }
     .form {
         width: 50%;
     }
@@ -223,7 +228,7 @@ form input{
         width: 50%;
     }
     footer a {
-        color: #889FB1;
+        color: #071927;
         font-size: 1.5em;
     }
     footer a:hover {
@@ -234,7 +239,7 @@ form input{
         font-size: 1em;
     }
     .paragraph--style {
-        color: #889FB1;
+        color: #071927;
     }
     footer label {
         font-size: 1em;
