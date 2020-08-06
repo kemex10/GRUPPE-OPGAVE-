@@ -1,0 +1,61 @@
+$blue:#454ADE;
+$violet:#610f7f;
+$white:#ffffff;
+
+body{
+	background-color: $white;
+}
+
+.galleryFilters{
+	margin: 20px auto;
+	align-content:center;
+	.filterList{
+		display: flex;
+		justify-content:space-between;
+		margin: 0;
+		.filterListItem{
+			margin-right: 10px;
+			&.active{
+				background-color: lighten($violet,15%);
+			}
+		}
+	}
+	.violetBtn{
+		background-color: $violet;
+		color: $white; 
+	}
+	.searchBar{
+		flex-grow:1;
+		width: auto;
+		border-color: $violet;
+		&:focus{
+			box-shadow: 0px 0px 5px $violet;
+		}
+	}
+}
+
+.galleryContainer{
+	.thumbnail{
+		padding-bottom: 20px;
+		position: relative;
+		border-radius: 5px;
+		img{
+			max-width: 100%;
+			border-radius: 5px;
+			box-sizing:border-box;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+		}
+		.item-desc{
+			position: absolute;
+			top: 10px;
+			right:15px;
+			display: inline-block;
+			text-transform: uppercase;
+			color:$white;
+			background-color: $violet;
+			padding: 5px 10px; 
+			border-radius: 5px;
+
+		}
+	}
+}
