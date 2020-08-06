@@ -43,3 +43,10 @@ body {
     border-radius: 5px; }
 
 /* END - Galleri - Filter */
+
+
+.page-footer {
+  height: 91vh;
+  width: 100%;
+  background-color: #40A242;
+}
