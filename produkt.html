@@ -6,9 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/Nav.css">
+  <link rel="stylesheet" href="/assets/css/Footer.css">
 </head>
 <body>
+
+	<nav class="topnav">
+		<a class="active" href="index.html">FORSIDE</a>
+		<a href="#news">PRODUKTER</a>
+		<a href="#contact">KONTAKT</a>
+		<a href="#about">OM OS</a>
+		<img src="./assets/images/logoV2.svg" alt="">
+	  </nav>
+
 
 
 	<div class="container">
@@ -70,7 +81,135 @@
 		</div>
 	</div>
 
+
+	<footer class="page-footer">
+		<!-- icons and social -->
+  <div class="icons--container">
+	<div class="icons--logo">
+		<img src="assets/images/logoV2.svg" alt="un">
+	</div>
+	<div class="icons--social" id="pc">
+		<a href="http://" target="_blank" rel="noopener noreferrer">
+			<img src="assets/images/facebook.png" alt="facebook">
+		</a>
+		<a href="http://" target="_blank" rel="noopener noreferrer">
+			<img src="assets/images/Twitter.png" alt="twitter">
+		</a>
+	</div>
+</div>
+
+<div class="mobile--wrapper">
+  <!-- anchors -->
+  <div class="anchor--container">
+	<div class="links">
+		<p>Links:</p>
+		<a href="#">Extern Link One</a>
+		<a href="#">Extern Link Two</a>
+		<a href="#">Extern Link Three</a>
+		<a href="#">Extern Link Four</a>
+		<a href="#">Extern Link Five</a>
+	</div>
+
+	<div class="partners">
+		<p>Partners:</p>
+		<a href="#">Partner Link One</a>
+		<a href="#">Partner Link Two</a>
+		<a href="#">Partner Link Three</a>
+		<a href="#">Partner Link Four</a>
+		<a href="#">Partner Link Five</a>
+	</div>
+	
+</div>
+
+
+	<!-- FORM -->
+    <div class="form--container">
+		<!-- form title -->
+		<p class="form--title">Ja tak!<span class="small"> Jeg vil gerne:</span></p>
   
+	   <form>
+		   <!-- checkbox -->
+			<div class="form--checkbox--container">
+			  
+			  <p class="paragraph--style">Ringes op:</p>
+			  <div class="form--checkbox--sub">
+				  <input type="checkbox" id="call" hidden>
+				  <label for="call"  class="checkmark"></label> 
+			  </div>
+			  <p class="paragraph--style">Modtage SMS:</p>
+			  <div class="form--checkbox--sub">
+				  <input type="checkbox" id="sms" hidden>
+				  <label for="sms"  class="checkmark"></label> 
+			  </div>
+			  <p class="paragraph--style">Modtage Mail:</p>
+			  <div class="form--checkbox--sub">
+				  <input type="checkbox" id="mail" hidden>
+				  <label for="mail"  class="checkmark"></label> 
+			  </div>
+			</div>
+		 
+		 <!-- radio -->
+		 <div class="form--radio--container">
+			 <p>Jeg er:</p>
+			  <p class="paragraph--style">Organisation:</p>
+			  <div class="form--radio--sub">
+				  <input type="radio" id="org" name="i" hidden required>
+				  <label for="org"  class="radiomark"></label> 
+			  </div>
+  
+			  <p class="paragraph--style">Privat person:</p>
+			  <div class="form--radio--sub">
+				  <input type="radio" id="privat" name="i" hidden required>
+				  <label for="privat"  class="radiomark"></label> 
+			  </div>
+  
+			  <p class="paragraph--style">Andet:</p>
+			  <div class="form--radio--sub">
+				  <input type="radio" id="other" name="i" hidden required>
+				  <label for="other"  class="radiomark"></label> 
+			  </div>
+		 </div>
+  
+		 <!-- form name, phone and email  -->
+		 <div class="form--input--container">
+		  <div class="">
+			  <label for="fname">Fulde Navn</label>
+			  <input type="text" id="fname" name="fname" required>
+		  </div>  
+		  
+		  <div class="">
+			  <label for="tel">Telefon nummer</label>
+			  <input type="text" id="tel" name="tel"  pattern="^[0-9-+\s()]*$" required> 
+		  </div>
+		  
+		  <div class="">
+			  <label for="email">E Mail adresse</label>
+			  <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" required>
+		  </div>
+		 
+		  <div class="input-btn">
+			  <input type="reset" value="Reset">
+			  <input type="submit" value="Send">
+		  </div>
+		  
+		 </div>
+		 <div class="icons--social mobile">
+		  <a href="http://" target="_blank" rel="noopener noreferrer">
+			  <img src="assets/images/facebook.png" alt="facebook">
+		  </a>
+		  <a href="http://" target="_blank" rel="noopener noreferrer">
+			  <img src="assets/images/Twitter.png" alt="twitter">
+		  </a>
+	  </div>
+	   </form>
+	  </div>
+  </div>
+  
+  
+	  </footer>
+
+
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.3.4/jquery.filterizr.min.js"></script>
