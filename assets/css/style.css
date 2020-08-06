@@ -45,6 +45,15 @@ body {
 /* END - Galleri - Filter */
 
 
+.galleryContainer p {
+  width: 350px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0; 
+  text-align: center;
+}
+
+
 .page-footer {
   height: 91vh;
   width: 100%;
