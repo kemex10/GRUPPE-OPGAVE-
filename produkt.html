@@ -23,16 +23,19 @@
 
 
 	<div class="container">
+		<div class="banner-container">
+			<img class="banner" src="assets/images/banner/tøj-banner.jpg" alt="">
+		</div>
+		
 		<div class="row">
 			<div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
 				<ul class="list-inline filterList">
-					<li class="filterListItem btn violetBtn" data-filter="all">ALL</li>
-					<li class="filterListItem btn violetBtn" data-filter="accessories">Accessories</li>
-					<li class="filterListItem btn violetBtn" data-filter="beklædning">Beklædning</li>
-					<li class="filterListItem btn violetBtn" data-filter="boots">Boots</li>
+					<li class="filterListItem btn violetBtn"  data-filter="all">ALL</li>
+					<li class="filterListItem btn violetBtn" onclick="bannerCategoryAccessories()" data-filter="accessories">Accessories</li>
+					<li class="filterListItem btn violetBtn" onclick="bannerCategoryTøj()" data-filter="beklædning">Beklædning</li>
+					<li class="filterListItem btn violetBtn" onclick="bannerCategorySko()" data-filter="boots">Boots</li>
 				</ul>
 			</div>
-
 		</div>
 
 		
