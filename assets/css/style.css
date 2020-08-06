@@ -11,16 +11,16 @@ body {
     .galleryFilters .filterList .filterListItem {
       margin-right: 10px; }
       .galleryFilters .filterList .filterListItem.active {
-        background-color: #9517c3; }
+        background-color: #298f2b; }
   .galleryFilters .violetBtn {
-    background-color: #610f7f;
+    background-color: #298f2b;
     color: #ffffff; }
   .galleryFilters .searchBar {
     flex-grow: 1;
     width: auto;
-    border-color: #610f7f; }
+    border-color: #298f2b; }
     .galleryFilters .searchBar:focus {
-      box-shadow: 0px 0px 5px #610f7f; }
+      box-shadow: 0px 0px 5px #298f2b; }
 
 .galleryContainer .thumbnail {
   padding-bottom: 20px;
@@ -38,7 +38,7 @@ body {
     display: inline-block;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #610f7f;
+    background-color: #298f2b;
     padding: 5px 10px;
     border-radius: 5px; }
 
