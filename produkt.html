@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 d-flex flex-wrap justify-content-between galleryFilters">
+				<ul class="list-inline filterList">
+					<li class="filterListItem btn violetBtn" data-filter="all">ALL</li>
+					<li class="filterListItem btn violetBtn" data-filter="accessories">Accessories</li>
+					<li class="filterListItem btn violetBtn" data-filter="beklædning">Beklædning</li>
+					<li class="filterListItem btn violetBtn" data-filter="boots">Boots</li>
+				</ul>
+			</div>
+
+		</div>
+
+		
+		<div class="row filtr-container galleryContainer">
+
+			<!-- !!!!  Dette program er styret af CSS frameworket BootStrap.
+				Item har en class med navnet col-md-3. Dette er en måde at fortælle hvor meget vært item skal fylde.
+				Det er næsten som at bruge fr i grids. 
+				Der kan konfigures mellem 0 - 12, 
+				Eksempel: 1 items der fylder hele column => col-md-12 = 12
+				Eksempel: 3 items ved siden af hinanden => col-md-4, col-md-4, col-md-4 = 12
+				Eksempel: 4 items ved siden af hinanden => col-md-2, col-md-2, col-md-2 col-md-2 = 12
+
+
+				data-category
+				Fortæller filtert hvilken kategori items tilhøre 
+
+				Billeder valgt fra den rigtige kategori images mappe 
+				Husk alt atribute
+				item-desc
+				   * Navn eller pris på produkt
+				   * Flyt til bund eller slet og lav eget ud fra design 
+
+			-->
+
+			<!-- Kategori accessories -->
+			<!-- item -->
+			<div class="col-md-3 filtr-item thumbnail" data-category="all,accessories">
+				<img src="images/animals/animals (1).jpg" alt="">
+				<span class="item-desc">Navn på item/eller pris</span>
+			</div>
+
+			<!-- Kategori beklædning -->
+			<!-- item -->
+			<div class="col-md-3 filtr-item thumbnail" data-category="all,beklædning">
+				<img src="images/nature/nature (1).jpg" alt="">
+				<span class="item-desc">Navn på item/eller pris</span>
+			</div>
+
+			<!-- Kategori beklædning -->
+			<!-- item -->
+			<div class="col-md-3 filtr-item thumbnail" data-category="all,boots">
+				<img src="images/places/arch (1).jpg" alt="">
+				<span class="item-desc">Navn på item/eller pris</span>
+			</div>
+		</div>
+	</div>
+
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.3.4/jquery.filterizr.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
