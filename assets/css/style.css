@@ -11,26 +11,29 @@ body {
     .galleryFilters .filterList .filterListItem {
       margin-right: 10px; }
       .galleryFilters .filterList .filterListItem.active {
-        background-color: #9517c3; }
+        background-color: #40A242; }
   .galleryFilters .violetBtn {
-    background-color: #610f7f;
+    background-color: #40A242;
     color: #ffffff; }
   .galleryFilters .searchBar {
     flex-grow: 1;
     width: auto;
-    border-color: #610f7f; }
+    border-color: #40A242; }
     .galleryFilters .searchBar:focus {
-      box-shadow: 0px 0px 5px #610f7f; }
+      box-shadow: 0px 0px 5px #40A242; }
 
 .galleryContainer .thumbnail {
-  padding-bottom: 20px;
   position: relative;
-  border-radius: 5px; }
+  justify-content: center;
+  border: 1px solid gray; 
+}
   .galleryContainer .thumbnail img {
     max-width: 100%;
-    border-radius: 5px;
     box-sizing: border-box;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8); }
+     }
+    .galleryContainer .thumbnail:hover {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    }
   .galleryContainer .thumbnail .item-desc {
     position: absolute;
     top: 10px;
@@ -38,17 +41,20 @@ body {
     display: inline-block;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #610f7f;
+    background-color: #40A242;
     padding: 5px 10px;
     border-radius: 5px; }
 
+    
 /* END - Galleri - Filter */
 
-
+.banner-container {
+  width: 100%;
+}
+.banner-container img {
+  width: 100%;
+}
 .galleryContainer p {
-  width: 350px;
-  padding: 10px;
-  border: 5px solid gray;
   margin-bottom: 8%; 
   text-align: center;
 }
